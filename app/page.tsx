@@ -49,7 +49,7 @@ const SearchPage = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/search?query=${encodeURIComponent(searchQuery)}&limit=20`
+        `/api/search?query=${encodeURIComponent(searchQuery)}&limit=20`
       );
       const data: SearchResponse = await response.json();
 
